@@ -3,16 +3,27 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  arr.inject(0){|mysum,x| mysum + x }
+
 end
 
+
 def max_2_sum arr
-  # YOUR CODE HERE
+  sum(arr.sort {|a,b| b <=> a}.take(2))
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
-end
+
+    arr.index {|x| x == n}
+    #   return true
+    # end
+    
+     arr.contains? do |y|
+       y == n - x
+     end
+   end
+
+#end
 
 # Part 2
 
