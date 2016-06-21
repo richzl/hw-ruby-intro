@@ -18,7 +18,7 @@ def sum_to_n? arr, n
   h = Hash.new(0)
   arr.each { |e| h[e] += 1 }
   arr.any? do |e|
-    h[n-e] >= ((2*e==n) ? 2 : 1)
+    h[n-e] >= ((e==n-e) ? 2 : 1)
   end
 end
 
@@ -27,7 +27,7 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  return "Hello, " << name
 end
 
 def starts_with_consonant? s
