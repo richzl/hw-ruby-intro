@@ -35,7 +35,7 @@ def starts_with_consonant? s
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+  s =~ /\A([01]*0)?0\z/
 end
 
 # Part 3
